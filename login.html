@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Images used on canvas, not shown to the user -->
+  <div style="display: none">
+    <img id="fence" src="images/fence.png" />
+    <img id="horse-jumping" src="images/horsejumping.png" />
+    <img id="horse-walking" src="images/horsewalking.png" />
+    <img id="horse-walking2" src="images/horsewalking2.png" />
+    <img id="grass" src="images/grass.png" />
+  </div>
+  <header>
+      <div class="navbar">
+        <a href="homepage.html" class="navbar-btn">Homepage</a>
+        <a href="login.html" class="navbar-btn active">Login</a>
+        <a href="register.html" class="navbar-btn">Register</a>
+        <a href="highscore.html" class="navbar-btn">Highscore</a>
+      </div>
+  </header>
+  <!-- Main Container -->
+  <div class="main-container">
+    <div id="error-message"></div>
+    <form action="#" method="post" onsubmit="return false">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" />
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <button type="submit" name="login" id="login-btn"  >Login</button>
+      </div>
+    </form>
+  </div>
+  </div>
+  <footer>
+     <p>Copyright &copy; 2021 Huneil Ahmad</p>
+  </footer>
+   <script src="scripts/login.js"></script>
+</body>
+
+</html>

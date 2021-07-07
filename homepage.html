@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Game</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Images used on canvas, not shown to the user -->
+  <div style="display: none">
+    <img id="fence" src="images/fence.png" />
+    <img id="horse-jumping" src="images/horsejumping.png" />
+    <img id="horse-walking" src="images/horsewalking.png" />
+    <img id="horse-walking2" src="images/horsewalking2.png" />
+    <img id="grass" src="images/grass.png" />
+  </div>
+
+  <!-- Main Container -->
+  <header>
+    <div class="navbar">
+      <a href="homepage.html" class="navbar-btn active">Homepage</a>
+      <a href="login.html" class="navbar-btn">Login</a>
+      <a href="register.html" class="navbar-btn">Register</a>
+      <a href="highscore.html" class="navbar-btn">Highscore</a>
+    </div>
+  </header>
+  <div class="main-container">
+    <div class="score-logout-container" id="score-logout-container">
+      <p  id="score" class="score"></p>
+      <button class="logout-btn" id="logout-btn">Logout</button>
+    </div>
+    <div class="game-container" 7>
+      <canvas width="1000" height="500" id="canvas"></canvas>
+      <div class="message-container" id="message-container">
+        <p class="message">Game Over</p>
+        <img src="images/replay.png" id="replay" />
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Copyright &copy; 2021 Anxhela Tafani</p>
+  </footer>
+  <!-- Attributes -->
+  <div style="display: none">
+    <a href="https://www.freepik.com/vectors/icons">Icons vector created by macrovector - www.freepik.com</a>
+    <a href="https://www.freepik.com/vectors/summer">Summer vector created by macrovector - www.freepik.com</a>
+    <div>
+      Icons made by
+      <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+
+
+    <script src="scripts/game.js"></script>
+    <script src="scripts/homepage.js"></script>
+</body>
+
+</html>

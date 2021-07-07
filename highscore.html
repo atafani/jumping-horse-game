@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Highscores</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Images used on canvas, not shown to the user -->
+  <div style="display: none">
+    <img id="fence" src="images/fence.png" />
+    <img id="horse-jumping" src="images/horsejumping.png" />
+    <img id="horse-walking" src="images/horsewalking.png" />
+    <img id="horse-walking2" src="images/horsewalking2.png" />
+    <img id="grass" src="images/grass.png" />
+  </div>
+  <header>
+      <div class="navbar">
+        <a href="homepage.html" class="navbar-btn">Homepage</a>
+        <a href="login.html" class="navbar-btn">Login</a>
+        <a href="register.html" class="navbar-btn">Register</a>
+        <a href="highscore.html" class="navbar-btn active">Highscore</a>
+      </div>
+  </header>
+  <!-- Main Container -->
+  <div class="main-container" id="main-container">
+    <table border="1" id="highscores-table" class="highscores-table">
+        <thead>
+            <th>Rank</th>
+            <th>Username</th>
+            <th>Score</th>
+        </thead>
+        <tbody id="highscores-table-body">
+
+        </tbody>
+    </table>
+  </div>
+  </div>
+  <footer>
+     <p>Copyright &copy; 2021 Anxhela Tafani</p>
+  </footer>
+  <script src="scripts/highscores.js"></script>
+  
+</body>
+
+</html>

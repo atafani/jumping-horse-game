@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#error-message {
+  font-size: 1.2em;
+  color: #ff0800;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #ff8500;
+  height: 70px;
+}
+
+.navbar a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: background 0.5s;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #ff8500;
+}
+.active {
+  background-color: white;
+  color: #ff8500 !important;
+}
+
+.score-logout-container {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: turquoise;
+  font-size: 1.2em;
+}
+.score {
+  font-size: 1.5em;
+}
+.logout-btn {
+  width: 20%;
+  margin: 0;
+}
+/* Main Container */
+.main-container {
+  height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+/* Game Container */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#canvas {
+  background-image: url(../images/sky.jpg);
+  background-position: bottom;
+}
+
+/* Game Over Message */
+.message-container {
+  display: none;
+  position: absolute;
+  font-size: 2em;
+  background-color: rgba(255, 255, 255, 0.699);
+  padding: 1em;
+}
+.message {
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-family: "Orbitron", sans-serif;
+}
+.message-container img {
+  display: block;
+  margin: 0 auto;
+}
+.message-container img:hover {
+  cursor: pointer;
+}
+
+/* Login & Register Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+}
+label {
+  width: 220px;
+  color: white;
+  background-color: turquoise;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.2em;
+}
+input {
+  width: 250px;
+  border: 1px solid turquoise;
+  outline-color: violet;
+  padding: 1em;
+  font-size: 1.1em;
+}
+button {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.5em 2em;
+  background-color: white;
+  color: turquoise;
+  border: 1px solid turquoise;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+button:hover {
+  cursor: pointer;
+  background-color: turquoise;
+  color: white;
+}
+
+/* Highscores Table */
+.highscores-table {
+  border: 1px solid turquoise;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 2em;
+}
+.highscores-table td,
+.highscores-table th {
+  padding: 0.5em 1em;
+}
+.highscores-table th {
+  background-color: turquoise;
+  color: white;
+}
+.highscores-table td {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #ff8500;
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
