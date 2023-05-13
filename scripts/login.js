@@ -15,7 +15,7 @@ loginBtn.onclick = () => {
       username.value = "";
       password.value = "";
       errorContainer.innerHTML = "";
-      window.location.href = "homepage.html";
+      window.location.href = "index.html";
     } else {
       errorContainer.innerHTML = "*Incorrect password";
       password.value = "";
