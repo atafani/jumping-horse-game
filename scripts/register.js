@@ -2,7 +2,6 @@
 const registerBtn = document.getElementById("register-btn");
 
 registerBtn.onclick = () => {
-  
   const name = document.getElementById("name").value;
   const username = document.getElementById("username").value;
   const email = document.getElementById("email").value;
@@ -34,7 +33,8 @@ registerBtn.onclick = () => {
     password === "" ||
     password.match(/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/) === null
   ) {
-    errorContainer.innerHTML = "*Please enter a valid password.Must be 8 characters, must have at least on capital letter and at least one number.";
+    errorContainer.innerHTML =
+      "*Please enter a valid password.Must be 8 characters, must have at least on capital letter and at least one number.";
     return;
   } else if (password !== confirmPassword) {
     errorContainer.innerHTML = "*Passwords entered did not match.";
@@ -63,9 +63,10 @@ registerBtn.onclick = () => {
     phoneNumber: phoneNumber,
     score: 0,
   };
-  
-  localStorage.setItem(username, JSON.stringify(user));
 
+  localStorage.setItem(username, JSON.stringify(user));
+  window.location.href = window.location.href.replace("register", "login");
+  document.getElementById("nerror-messageame").value = "";
   document.getElementById("name").value = "";
   document.getElementById("username").value = "";
   document.getElementById("confirm-password").value = "";

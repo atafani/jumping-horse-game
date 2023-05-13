@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #ff8500;
+  background-color: #2B4068;
   height: 70px;
 }
 
@@ -32,11 +32,11 @@
 .navbar a:hover {
   cursor: pointer;
   background-color: white;
-  color: #ff8500;
+  color: #2B4068;
 }
 .active {
   background-color: white;
-  color: #ff8500 !important;
+  color: #2B4068 !important;
 }
 
 .score-logout-container {
@@ -45,7 +45,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: turquoise;
+  color: #2B4068;
   font-size: 1.2em;
 }
 .score {
@@ -114,14 +114,14 @@ form div {
 label {
   width: 220px;
   color: white;
-  background-color: turquoise;
+  background-color: #48A0F1;
   padding: 1em;
   text-align: center;
   font-size: 1.2em;
 }
 input {
   width: 250px;
-  border: 1px solid turquoise;
+  border: 1px solid #48A0F1;
   outline-color: violet;
   padding: 1em;
   font-size: 1.1em;
@@ -131,21 +131,21 @@ button {
   margin: 0 auto;
   padding: 0.5em 2em;
   background-color: white;
-  color: turquoise;
-  border: 1px solid turquoise;
+  color: #48A0F1;
+  border: 1px solid #48A0F1;
   width: 100%;
   border-radius: 5px;
   font-size: 1.2em;
 }
 button:hover {
   cursor: pointer;
-  background-color: turquoise;
+  background-color: #48A0F1;
   color: white;
 }
 
 /* Highscores Table */
 .highscores-table {
-  border: 1px solid turquoise;
+  border: 1px solid #48A0F1;
   border-collapse: collapse;
   width: 80%;
   margin: 0 2em;
@@ -155,7 +155,7 @@ button:hover {
   padding: 0.5em 1em;
 }
 .highscores-table th {
-  background-color: turquoise;
+  background-color: #48A0F1;
   color: white;
 }
 .highscores-table td {
@@ -164,7 +164,7 @@ button:hover {
 
 /* Footer */
 footer {
-  background-color: #ff8500;
+  background-color: #2B4068;
   color: white;
   height: 40px;
   display: flex;
